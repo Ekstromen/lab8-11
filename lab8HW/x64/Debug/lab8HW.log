@@ -1,0 +1,6 @@
+﻿  Source.c
+D:\Программирование\lab8HW\Source.c(10,6): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\Программирование\lab8HW\Source.c(11,25): warning C4305: +=: усечение из "double" в "float"
+D:\Программирование\lab8HW\Source.c(11,31): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\Программирование\lab8HW\Source.c(8,1): warning C4305: инициализация: усечение из "double" в "float"
+  lab8HW.vcxproj -> D:\Программирование\lab8HW\x64\Debug\lab8HW.exe
