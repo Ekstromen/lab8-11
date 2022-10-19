@@ -11,9 +11,9 @@ void main(void)
 	int eps;
 	double x;
 	setlocale(LC_ALL, "rus");
-	printf("Введите x:\n");
+	printf("Р’РІРµРґРёС‚Рµ x:\n");
 	scanf("%lf", &x);
-	printf("Введите точность определения:\n");
+	printf("Р’РІРµРґРёС‚Рµ С‚РѕС‡РЅРѕСЃС‚СЊ РѕРїСЂРµРґРµР»РµРЅРёСЏ:\n");
 	scanf("%d", &eps);
 	printf(" arcctg = %f", (M_PI/2) + ryad(x,eps));
 }
