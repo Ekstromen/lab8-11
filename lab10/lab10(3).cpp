@@ -49,7 +49,9 @@ int main()
 			printf("Дистанция между точками = %f\n", dist(b, a));
 			break;
 		case 3:
-			printf("Точка середины отрезка ab = (%.2f, %.2f)\n", midle(b, a),);
+			printf("Точка середины отрезка ab = ");
+			put_point(midle(a,b));
+
 			break;
 		case 4:
 			printf("\n Точка a принадлежит к %.0f четверти\n", quater(a));
@@ -90,6 +92,7 @@ Point midle(Point z, Point w)
 	Point b;
 	b.x = (z.x + w.x) / 2.;
 	b.y = (z.y + w.y) / 2;
+	b.name = 'm';
 	return b;
 
 }
