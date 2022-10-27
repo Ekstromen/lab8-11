@@ -1,1 +1,1 @@
-D:\Программирование\lab10\x64\Debug\lab10.exe
+D:\Рыженков Евгений\lab10\x64\Debug\lab10.exe
