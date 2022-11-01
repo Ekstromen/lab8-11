@@ -9,9 +9,9 @@ void main()
 {
 	int x, y, X, Y,b,a,r;
 	setlocale(LC_ALL, "rus");
-	printf("Введите радиус: \n");
+	printf("Р’РІРµРґРёС‚Рµ СЂР°РґРёСѓСЃ: \n");
 	scanf("%d", &r);
-	printf("Введите малую сторону: \n");
+	printf("Р’РІРµРґРёС‚Рµ РјР°Р»СѓСЋ СЃС‚РѕСЂРѕРЅСѓ: \n");
 	scanf("%d", &a);
 
 	X = r * 2;
@@ -37,4 +37,4 @@ int figure(int x, int y, int r)
 	else return 0;
 
 
-}	
+}		
