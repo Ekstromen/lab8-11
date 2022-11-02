@@ -8,11 +8,15 @@ int figure(int x, int y, int r);
 void main()
 {
 	int x, y, X, Y,b,a,r;
+	char c;
 	setlocale(LC_ALL, "rus");
+	printf("Введите символ: \n");
+	scanf("%c", &c);
 	printf("Введите радиус: \n");
 	scanf("%d", &r);
 	printf("Введите малую сторону: \n");
 	scanf("%d", &a);
+	
 
 	X = r * 2;
 	Y = r * 2;
@@ -22,7 +26,7 @@ void main()
 	{
 		for (x = -(X / 2); x <= X / 2; ++x)
 		{
-			if (figure(x, y, r) > figure(x,y,r-2)) printf("x ");
+			if (figure(x, y, r) > figure(x,y,r-2)) printf("%c ",c);
 			else printf("  ");
 		}
 		printf("\n");
@@ -37,4 +41,4 @@ int figure(int x, int y, int r)
 	else return 0;
 
 
-}		
+}			
