@@ -17,11 +17,7 @@ void put_point(Point z);
 float dist(Point z, Point w);
 Point midle(Point z, Point w);
 float quater(Point x);
-float edit_ax(Point z);
-float edit_ay(Point z);
-float edit_bx(Point z);
-float edit_by(Point z);
-
+Point edit(Point z);
 
 int main()
 {
@@ -33,6 +29,7 @@ int main()
 	a.x = 9;
 	a.y = 2;
 	b.name = 'B';
+	a.name = 'A';
 	setlocale(LC_ALL, "rus");
 	while (v != 0)
 	{
@@ -58,10 +55,8 @@ int main()
 			printf("\n Точка b принадлежит к %.0f четверти\n", quater(b));
 			break;
 		case 5:
-			printf("\n%.2f\n", a.x = edit_ax(a));
-			printf("\n%.2f\n", a.y = edit_ay(a));
-			printf("\n%.2f\n", b.x = edit_bx(b));
-			printf("\n%.2f\n", b.y = edit_by(b));
+			a = edit(a);
+			b = edit(b);
 			break;
 		case 0:
 			v = 0;
@@ -104,27 +99,18 @@ float quater(Point z)
 	if (z.x > 0 && z.y < 0) return 4;
 }
 
-float edit_ax(Point z)
+Point edit(Point z)
 {
-	printf("Введите новое значение а.x:\n");
-	scanf("%f", &z.x);
-	return z.x;
+	Point m;
+	float i, j;
+	m.name = 'M';
+	printf("Введите значение точки %c.x",z.name);
+	scanf("%f", &i);
+	printf("Введите значение точки %c.y",z.name);
+	scanf("%f", &j);
+	m.x = i;
+	m.y = j;
+	return (m);
 }
-float edit_ay(Point z)
-{
-	printf("Введите новое значение a.y:\n");
-	scanf("%f", &z.y);
-	return z.y;
-}
-float edit_bx(Point z)
-{
-	printf("Введите новое значение b.x:\n");
-	scanf("%f", &z.x);
-	return z.x;
-}
-float edit_by(Point z)
-{
-	printf("Введите новое значение b.y:\n");
-	scanf("%f", &z.y);
-	return z.y;
-}
+
+
