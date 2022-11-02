@@ -5,15 +5,34 @@
 
 void main()
 {
-	int x,c=0;
-	setlocale(LC_ALL, "rus");
-	printf("������� �����:\n");
-	scanf("%d", &x);
-	for (int z = x; x > 0; c++) z = z / 10;
-	for (int y = 1; y < c; y++)
+	int x, c, ch, z = 2, w;
+
+
+	while (1)
 	{
-		printf("%d ", x / 10);
+		setlocale(LC_ALL, "rus");
+		printf("Введите число:\n");
+		scanf("%d", &x);
+		char v;
+		
+
+		while (x / 10 != 0)
+		{
+			c = x % 10;
+			ch = c;
+			x = x / 10;
+			if (x % 10 == c)
+			{
+				printf("Рядом расположенные одинаковые цифры: %d\n", ch);
+
+			}
+
+		}
+			
+		printf("Хотите продолжить работу алгоритма?\n Любая клавиша = да, n = нет.\n");
+		scanf("%c", &v);
+		if (v = getchar() == 'n') break;
+
+
 	}
-
-
 }
